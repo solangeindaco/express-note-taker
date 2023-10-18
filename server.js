@@ -1,5 +1,5 @@
 const express = require('express');
-//const routes = require('./routes');
+const routes = require('./routes');
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-//app.use(routes);// is passing two parameters '/', routes
+app.use(routes);// is passing two parameters '/', routes
 
 
 app.listen(PORT, () => console.log(`Server started at localhost:${PORT}`));
