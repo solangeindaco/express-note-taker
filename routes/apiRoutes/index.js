@@ -1,8 +1,6 @@
 const router = require('express').Router();
-const noteRoutes = require('./noteRoutes');
+const notesController = require('../../controllers');
 
-// we are going to forward any request that has /notes at the front of it
-// to the routes declared in noteRoutes
-router.use('/notes', noteRoutes);
+router.use('/notes', notesController);
 
 module.exports = router;

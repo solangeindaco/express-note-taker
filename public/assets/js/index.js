@@ -173,6 +173,8 @@ const renderNoteList = async (notes) => {
     const li = createLi(note.title);
     li.dataset.note = JSON.stringify(note);
 
+    console.log(li.dataset.note);
+
     noteListItems.push(li);
   });
 

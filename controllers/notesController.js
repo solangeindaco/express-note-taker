@@ -12,12 +12,12 @@ router.get('/', (req, res) => {
 });
 
 // GET Route for a specific note
-router.get('/:note_id', (req, res) => {
-  const noteId = req.params.note_id;
+router.get('/:id', (req, res) => {
+  const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json.filter((note) => note.note_id === noteId);
+      const result = json.filter((note) => note.id === noteId);
       return result.length > 0
         ? res.json(result)
         : res.json('No note with that ID');
@@ -25,13 +25,14 @@ router.get('/:note_id', (req, res) => {
 });
 
 // DELETE Route for a specific note
-router.delete('/:note_id', (req, res) => {
-  const tipId = req.params.note_id;
+router.delete('/:id', (req, res) => {
+  const noteId = req.params.id;
+
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
       // Make a new array of all note except the one with the ID provided in the URL
-      const result = json.filter((note) => note.note_id !== noteId);
+      const result = json.filter((note) => note.id !== noteId);
 
       // Save that array to the filesystem
       writeToFile('./db/db.json', result);
@@ -51,7 +52,7 @@ router.post('/', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuidv4(),
+      id: uuidv4(),
     };
 
     readAndAppend(newNote, './db/db.json');
