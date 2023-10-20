@@ -44,7 +44,6 @@ router.delete('/:id', (req, res) => {
 
 // POST Route for a new note
 router.post('/', (req, res) => {
-  console.log(req.body);
 
   const { title, text } = req.body;
 

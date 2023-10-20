@@ -4,7 +4,11 @@ const path = require('path');
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+//the server will listen on port 3001 if the PORT environment variable isn’t set this is for deployment in Heroku
+let PORT = process.env.PORT;
+if (PORT == null || PORT == "") {
+  PORT = 3001;
+}
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
