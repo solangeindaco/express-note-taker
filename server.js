@@ -13,13 +13,10 @@ if (PORT == null || PORT == "") {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
+//This is a built-in middleware function in Express. It serves static files
+//Sets file extension fallbacks: If a file is not found, search for files with the specified extensions and serve the first one found.
+app.use(express.static('public',{extensions: ['html']}));
 
 app.use(routes);// is passing two parameters '/', routes
-
-// This view route is a GET route for the feedback page
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/notes.html'))
-);
 
 app.listen(PORT, () => console.log(`Server started at localhost:${PORT}`));
