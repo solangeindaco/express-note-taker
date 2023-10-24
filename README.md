@@ -15,9 +15,9 @@ Repository URL: https://github.com/solangeindaco/express-note-taker
 
 ## Usage
 
-The following video shows application's appearance and functionality:
+The following video shows the web application's appearance and functionality:
 
-![Video that shows the functionality of the application](https://drive.google.com/file/d/1dC6VrtnOccW6nRM4mIZbsU0GzxZcVXkI/view)      
+[Note Taker video](https://drive.google.com/file/d/1dC6VrtnOccW6nRM4mIZbsU0GzxZcVXkI/view)      
 
 ## Credits
 
