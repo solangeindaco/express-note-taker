@@ -15,12 +15,9 @@ Repository URL: https://github.com/solangeindaco/express-note-taker
 
 ## Usage
 
-The following images shows the command line application's appearance and functionality:
+The following video shows application's appearance and functionality:
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./assets/11-express-homework-demo-01.png)
-
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./assets/11-express-homework-demo-02.png)
-
+![Video that shows the functionality of the application](https://drive.google.com/file/d/1dC6VrtnOccW6nRM4mIZbsU0GzxZcVXkI/view)      
 
 ## Credits
 

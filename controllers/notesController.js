@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// It is use to generate a unique id
 const { v4: uuidv4 } = require('uuid');
 const {
   readFromFile,
@@ -51,7 +52,7 @@ router.post('/', (req, res) => {
     const newNote = {
       title,
       text,
-      id: uuidv4(),
+      id: uuidv4(), // Generate a new id
     };
 
     readAndAppend(newNote, './db/db.json');

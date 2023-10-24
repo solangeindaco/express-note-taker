@@ -5,13 +5,28 @@
         "id": "d94027e4-3eb9-4b36-936d-046a22e79c66"
     },
     {
-        "title": "Note 1",
-        "text": "drop the kids to school",
-        "id": "d08d84ce-cad1-45c0-894b-1444451dc8d7"
-    },
-    {
         "title": "note 3",
         "text": "hello sol",
         "id": "b5804d42-85a4-4209-9217-8d05e73da67b"
+    },
+    {
+        "title": "note 5",
+        "text": "hello Mica",
+        "id": "09bfbb3c-6b20-4a19-bc1c-052fe3806bb2"
+    },
+    {
+        "title": "Note 1",
+        "text": "clean the house",
+        "id": "a712cb6a-f11f-453d-8d3f-a0afc1b43bee"
+    },
+    {
+        "title": "Note 6",
+        "text": "do the homework",
+        "id": "faae35a1-b6e0-42d7-85e1-6c31f11445f6"
+    },
+    {
+        "title": "Note 7",
+        "text": "do the homework",
+        "id": "051c3cd6-05a9-4881-a899-0a2c281c6c32"
     }
 ]
