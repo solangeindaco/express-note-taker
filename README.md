@@ -4,7 +4,7 @@
 
 ## Description
 
-I create this application to learn about Express.js. The application can be used to write and save notes. The front-end code was provided by a Coding Bootcamp course. I deployed this app on Heroku.
+I create this application to learn about Express.js. The application can be used to write and save notes. The front-end code was provided by a Coding Bootcamp course. For the Coding bootcamp,I deployed first on Heroku, then I deployed to render
 I learn:  
     - how to create an application using Express.js.  
     - how to deploy an application on  Heroku.                       
@@ -12,7 +12,7 @@ I learn:
 ## Installation
 
 Repository URL: https://github.com/solangeindaco/express-note-taker      
-Application URL: https://exs-note-taker-1e8b2846d5cf.herokuapp.com/
+Application URL:https://express-note-taker-1odq.onrender.com
 
 ## Usage
 
